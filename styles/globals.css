@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl md:text-5xl font-bold;
+  }
+  h2 {
+    @apply text-2xl md:text-3xl font-bold;
+  }
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+  span {
+    @apply text-xl md:text-2xl;
+  }
+}
+
+*,
+*::behtmlfore,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1.25rem;
+  background-color: var(--secondary);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar {
+  background-color: darkgrey;
+}
+
+body::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
+}
+
+div::-webkit-scrollbar {
+  display: none;
+}
